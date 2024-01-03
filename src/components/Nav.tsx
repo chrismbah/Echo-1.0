@@ -43,7 +43,7 @@ export default function Nav() {
         >
           <p className="text-sm lg:text-md">{user?.displayName}</p>
           <img
-            src={user? user.photoURL : ""}
+            src={user?.photoURL || ""}
             alt="userImage"
             className="rounded-full w-[30px] h-[30px] mr-2"
           />
