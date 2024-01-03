@@ -1,10 +1,10 @@
 import { auth, provider } from "../config/firebase";
 import { signInWithPopup } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
-import { useAuthState } from "react-firebase-hooks/auth";
+// import { useAuthState } from "react-firebase-hooks/auth";
 import { signOut } from "firebase/auth";
 export default function Login() {
-  const user = useAuthState(auth);
+  // const user = useAuthState(auth);
   const navigate = useNavigate();
 
   const signInWithGoogle = async () => {
